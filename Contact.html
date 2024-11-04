@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+
+    <style>
+        body {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4E48PobYLNTfrm5MNWrpQd6NkHrnRL82HIQ&s");
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between; 
+            background-color: rgba(89, 84, 92, 0.6);
+            padding: 10px;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 15px;
+        }
+
+        .header img {
+            height: 50px;
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        .header a {
+            color: #020101;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .header a:hover {
+            background-color: rgb(197, 114, 114);
+            color: #001131;
+        }
+
+        .header a.active {
+            background-color: #181811;
+            color: white;
+        }
+
+        .logo-text {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 24px;
+            color: #080808;
+        }
+
+        .main-content {
+            text-align: center;
+            margin: 50px auto;
+            color: white;
+            max-width: 90%;
+        }
+
+        h1 {
+            color: black;
+            font-size: 2rem;
+        }
+
+        .contact-form {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: rgb(197, 114, 114);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background-color: rgb(24, 24, 17);
+        }
+
+        footer {
+            background-color: rgba(89, 84, 92, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img src="https://i.pinimg.com/736x/2f/de/d7/2fded716c1cecf39d0f12f748667b481.jpg" alt="Logo" class="logo">
+            <a href="index.html" class="logo-text">Victoria’s Secret</a>
+        </div>
+        <div class="header-right">
+            <a href="about.html">About Us</a>
+            <a class="active" href="contact.html">Contact Us</a>
+            <a href="index.html">Home</a>
+            <a href="login.html">Log Out</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>Contact Us</h1>
+        <p>If you are interested in buying, please fill out the form below:</p>
+        
+        <div class="contact-form">
+            <form action="submit_contact.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Victoria's Secret. All rights reserved.</p>
+        <p>Follow us on:
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+</body>
+</html>

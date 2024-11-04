@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+
+    <style>
+        body {
+            background-image: url("https://i.pinimg.com/736x/04/17/26/0417261707559c0ec7c43876f1537c55.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(89, 84, 92, 0.7);
+            padding: 15px;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 15px;
+        }
+
+        .header img {
+            height: 50px;
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        .header a {
+            color: #080808;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .header a:hover {
+            background-color: rgb(197, 114, 114);
+            color: #001131;
+        }
+
+        .header a.active {
+            background-color: #181811;
+            color: white;
+        }
+
+        .logo-text {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 24px;
+            color: #080808;
+        }
+
+        .main-content {
+            text-align: center;
+            margin: 50px auto;
+            color: white;
+            max-width: 90%;
+        }
+
+        h1 {
+            color: black;
+            font-size: 2rem;
+        }
+
+        .applet-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .applet {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .applet img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .applet h2 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .applet p {
+            color: #555;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            text-align: justify;
+        }
+
+        footer {
+            background-color: rgba(89, 84, 92, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .applet-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img src="https://i.pinimg.com/736x/2f/de/d7/2fded716c1cecf39d0f12f748667b481.jpg" alt="Logo" class="logo">
+            <a href="index.html" class="logo-text">Victoria’s Secret</a>
+        </div>
+        <div class="header-right">
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact us</a>
+            <a class="active" href="index.html">Home</a>
+            <a href="logOut.html">Log out</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>Types of Victoria’s Secret Perfume!</h1>
+    </div>
+
+    <div class="applet-container">
+        <div class="applet">
+            <img src="https://www.victoriassecret.in/on/demandware.static/-/Sites-vs_master_catalog/default/dw642b4c39/large/112047178527_OF_F.jpg" alt="Bare Vanilla">
+            <h2>Bare Vanilla</h2>
+            <p>Bare Vanilla offers a warm and subtly sweet vanilla scent with hints of cashmere and whipped vanilla. It’s perfect for fans of cozy, slightly sensual fragrances that linger on the skin for hours.</p>
+        </div>
+        <div class="applet">
+            <img src="https://www.victoriassecret.in/on/demandware.static/-/Sites-vs_master_catalog/default/dwd6f5667a/large/112047171340_OF_F.jpg" alt="Pure Seduction">
+            <h2>Pure Seduction</h2>
+            <p>Pure Seduction combines red plum and freesia, creating a flirty, fruity aroma. This youthful scent is ideal for casual daily wear, especially during spring and summer.</p>
+        </div>
+        <div class="applet">
+            <img src="https://m.media-amazon.com/images/I/61A9CPU2ywL.jpg" alt="Love Spell">
+            <h2>Love Spell</h2>
+            <p>Love Spell is a sweet, fruity scent with notes of cherry blossom and peach. This classic fragrance is known for its romantic, uplifting vibe and is great for day-to-day use.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Victoria's Secret. All rights reserved.</p>
+        <p>Follow us on:
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+</body>
+</html>

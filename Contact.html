@@ -111,7 +111,7 @@
             background-color: rgba(89, 84, 92, 0.8);
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 10px;
             position: relative;
             bottom: 0;
             width: 100%;
@@ -138,7 +138,6 @@
             <a href="aboutus.html">About Us</a>
             <a class="active" href="Contact.html">Contact Us</a>
             <a href="homepage.html">Home</a>
-            <a href="login.html">Log In</a>
             <a href="logout.html">Log Out</a>
         </div>
     </div>
@@ -148,7 +147,8 @@
         <p>If you are interested in buying, please fill out the form below:</p>
         
         <div class="contact-form">
-            <form action="submit_contact.php" method="POST">
+            <form action="#" method="POST" onsubmit="alert('Form submitted!'); return false;">
+              <form action="submit_contact.php" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
